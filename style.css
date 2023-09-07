@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Oswald:wght@300;400&family=Ubuntu&family=Work+Sans:ital@1&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+  align-content: center;
+}
+
+body {
+  background-color: rgba(6, 5, 90, 0.963);
+  background: linear-gradient(45deg, rgba(6, 5, 90, 0.963), rgb(62, 2, 73));
+  color: white;
+}
+
+.user {
+  font-size: 2em;
+  color: rgb(188, 182, 182);
+}
+
+.data {
+  max-width: 40em;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  /* border: 1px solid rgb(140, 12, 163); */
+  box-shadow: 0px 0px 8px 1px rgb(140, 12, 163);
+  border-radius: 2em;
+
+  padding: 7em 5em;
+
+  gap: 2em;
+}
+.data button {
+  width: 15em;
+  padding: 1em 2em;
+  border-radius: 3em;
+  border: none;
+  background-color: rgb(140, 12, 163);
+  color: white;
+  font-size: 1.4em;
+}
+
+.data p {
+  text-align: center;
+  color: rgb(221, 212, 212);
+  line-height: 1.7em;
+}
+.data h3 {
+  text-align: center;
+}
+section {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+
+footer {
+  padding: 1em 1em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  text-align: center;
+  font-size: 1.5em;
+}
