@@ -53,7 +53,9 @@ body {
   color: white;
   font-size: 1.4em;
 }
-
+a {
+  color: white;
+}
 .data button:hover,
 .rx-sociaux ion-icon:hover {
   color: rgb(163, 12, 93);
