@@ -1,21 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Oswald:wght@300;400&family=Ubuntu&family=Work+Sans:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Oswald:wght@300;400&family=Ubuntu&family=Work+Sans:ital@1&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 2rem;
-  align-content: center;
+  align-items: center;
+  height: 4em;
+  padding: 0.5em 1em;
+  background-color: rgb(163, 12, 93);
 }
 
 body {
-  background-color: rgba(6, 5, 90, 0.963);
   background: linear-gradient(45deg, rgba(6, 5, 90, 0.963), rgb(62, 2, 73));
   color: white;
 }
@@ -26,16 +27,20 @@ body {
 }
 
 .data {
-  max-width: 40em;
+  width: 55vw;
+  height: 65%;
+
   display: flex;
   flex-direction: column;
+  margin: 2em 0;
 
   align-items: center;
+  align-content: center;
   /* border: 1px solid rgb(140, 12, 163); */
   box-shadow: 0px 0px 8px 1px rgb(140, 12, 163);
   border-radius: 2em;
 
-  padding: 7em 5em;
+  padding: 6em 5em;
 
   gap: 2em;
 }
@@ -44,32 +49,61 @@ body {
   padding: 1em 2em;
   border-radius: 3em;
   border: none;
-  background-color: rgb(140, 12, 163);
+  background-color: rgb(163, 12, 93);
   color: white;
   font-size: 1.4em;
+}
+
+.data button:hover,
+.rx-sociaux ion-icon:hover {
+  color: rgb(163, 12, 93);
+}
+
+.data button:hover {
+  background-color: rgb(140, 12, 163);
+
+  color: rgb(255, 255, 255);
 }
 
 .data p {
   text-align: center;
   color: rgb(221, 212, 212);
   line-height: 1.7em;
+  font-size: 1.2em;
+  max-width: 40em;
 }
 .data h3 {
   text-align: center;
 }
 section {
-  min-height: 80vh;
+  min-height: 91vh;
+
   display: flex;
   justify-content: center;
 
   align-items: center;
 }
 
-footer {
-  padding: 1em 1em;
+.rx-sociaux {
   display: flex;
   justify-content: center;
   gap: 1em;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.4em;
+}
+
+@media screen and (max-width: 450px) {
+  .data {
+    width: 95vw;
+    padding: 4em 2em;
+  }
+
+  .data p {
+    max-width: 100%;
+  }
+
+  .data button {
+    width: 15em;
+    font-size: 1em;
+  }
 }
